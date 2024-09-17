@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Set<String> daysOfWeek = new HashSet<>();
         Set<String> newDaysOfWeek = new LinkedHashSet<>();
+
         daysOfWeek.add("Monday");
         daysOfWeek.add("Tuesday");
         daysOfWeek.add("Wednesday");
@@ -13,6 +14,8 @@ public class Main {
         daysOfWeek.add("Friday");
         daysOfWeek.add("Saturday");
         daysOfWeek.add("Sunday");
+        System.out.println("Hash Set " + newDaysOfWeek);
+
 
         newDaysOfWeek.add("Monday");
         newDaysOfWeek.add("Tuesday");
@@ -22,7 +25,8 @@ public class Main {
         newDaysOfWeek.add("Saturday");
         newDaysOfWeek.add("Sunday");
 
-        System.out.println(newDaysOfWeek);
+        System.out.println("Liked Hash Set " + newDaysOfWeek);
+        System.out.println("Is the first Set equal to the second one?" + daysOfWeek.equals(newDaysOfWeek));
         
     }
 }
