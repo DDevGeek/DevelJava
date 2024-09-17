@@ -1,0 +1,28 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        Set<String> daysOfWeek = new HashSet<>();
+        Set<String> newDaysOfWeek = new LinkedHashSet<>();
+        daysOfWeek.add("Monday");
+        daysOfWeek.add("Tuesday");
+        daysOfWeek.add("Wednesday");
+        daysOfWeek.add("Thursday");
+        daysOfWeek.add("Friday");
+        daysOfWeek.add("Saturday");
+        daysOfWeek.add("Sunday");
+
+        newDaysOfWeek.add("Monday");
+        newDaysOfWeek.add("Tuesday");
+        newDaysOfWeek.add("Wednesday");
+        newDaysOfWeek.add("Thursday");
+        newDaysOfWeek.add("Friday");
+        newDaysOfWeek.add("Saturday");
+        newDaysOfWeek.add("Sunday");
+
+        System.out.println(newDaysOfWeek);
+        
+    }
+}
